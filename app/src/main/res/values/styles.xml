@@ -1,0 +1,89 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- School List Item Styles - start -->
+    <style name="SchoolListSeparator" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="SchoolListChevron" >
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:src">@drawable/right_chevron</item>
+    </style>
+
+    <style name="SchoolListItemText" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- School List Item Styles - End -->
+
+    <!-- Header Styles - start -->
+    <style name="Header_Back_Arrow" >
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/left_arrow</item>
+    </style>
+    <style name="Header_Title" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:src">@drawable/left_arrow</item>
+    </style>
+    <!-- Header Styles - End -->
+
+    <!-- Error Page - start -->
+    <style name="Error_Text" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- Error Page Styles - End -->
+
+    <!-- School Details Page - start -->
+    <style name="School_Details_Text" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="School_Details_Text_Title" parent="School_Details_Text">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ProgressBarText" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="School_Details_Button" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+    <!-- School Details Styles - End -->
+
+
+</resources>

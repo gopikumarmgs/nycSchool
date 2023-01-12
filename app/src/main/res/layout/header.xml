@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            style="@style/Header_Back_Arrow"
+            android:id="@+id/back_arrow"/>
+        <TextView
+            android:id="@+id/header_title"
+            style="@style/Header_Title"
+            android:text="Test" />
+</RelativeLayout>

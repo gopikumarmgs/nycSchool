@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <include
+           android:id="@+id/details_header"
+           layout="@layout/header"/>
+
+        <TextView
+            android:id="@+id/error_text"
+            style="@style/Error_Text"
+            android:visibility="gone"
+            android:text="Sorry, Data is not available"
+            android:layout_below="@+id/details_header"/>
+
+        <RelativeLayout
+            android:id="@+id/school_details_data"
+            android:layout_below="@+id/details_header"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/school_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/school"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/content"
+                android:orientation="vertical"
+                android:layout_below="@+id/school_image">
+
+                <TextView
+                    style="@style/School_Details_Text_Title"
+                    android:text="SCHOOL OVERVIEW"/>
+
+                <TextView
+                    android:id="@+id/school_overview"
+                    style="@style/School_Details_Text"
+                    tools:text="bla bla" />
+
+                <TextView
+                    style="@style/School_Details_Text_Title"
+                    android:text="ADDRESS"/>
+
+                <TextView
+                    android:id="@+id/school_address"
+                    style="@style/School_Details_Text"
+                    tools:text="avatar" />
+
+                <TextView
+                    android:id="@+id/school_email"
+                    style="@style/School_Details_Text"
+                    tools:text="bla bla"/>
+
+                <TextView
+                    android:id="@+id/school_website"
+                    style="@style/School_Details_Text"
+                    android:textColor="#000080"
+                    tools:text="bla bla"/>
+
+                <TextView
+                    style="@style/School_Details_Text_Title"
+                    android:text="SCHOOL SPORTS/EXTRA ACTIVITIES"/>
+
+                <TextView
+                    android:id="@+id/school_sports"
+                    style="@style/School_Details_Text"
+                    tools:text="bla bla" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/content">
+
+                <TextView
+                    android:id="@+id/sat_test_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:indeterminate="false"
+                            android:layout_centerInParent="true"
+                            android:max="1000"
+                            android:progress="0"
+                            android:layout_margin="10dp"
+                            android:progressDrawable="@drawable/custom_progressbar"
+                            android:secondaryProgress="0" />
+                        <TextView
+                            android:id="@+id/txtProgress1"
+                            style="@style/ProgressBarText"
+                            android:layout_alignBottom="@+id/progressBar1"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar2"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:indeterminate="false"
+                            android:layout_centerInParent="true"
+                            android:max="1000"
+                            android:progress="0"
+                            android:layout_margin="10dp"
+                            android:progressDrawable="@drawable/custom_progressbar"
+                            android:secondaryProgress="0" />
+                        <TextView
+                            android:id="@+id/txtProgress2"
+                            style="@style/ProgressBarText"
+                            android:layout_alignBottom="@+id/progressBar2"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content">
+
+
+                        <ProgressBar
+                            android:id="@+id/progressBar3"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:indeterminate="false"
+                            android:layout_centerInParent="true"
+                            android:max="1000"
+                            android:progress="0"
+                            android:layout_margin="10dp"
+                            android:progressDrawable="@drawable/custom_progressbar"
+                            android:secondaryProgress="0" />
+                        <TextView
+                            android:id="@+id/txtProgress3"
+                            style="@style/ProgressBarText"
+                            android:layout_alignBottom="@+id/progressBar3"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_below="@id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:id="@+id/btn_navigate"
+                    style="@style/School_Details_Button"
+                    android:layout_height="50dp"
+                    android:text="Navigate"/>
+
+                <Button
+                    android:id="@+id/btn_call"
+                    style="@style/School_Details_Button"
+                    android:layout_toRightOf="@+id/btn_navigate"
+                    android:background="#000080"
+                    android:textColor="#FFF"
+                    android:text="Call"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

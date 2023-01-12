@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/school_list_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/school_name"
+            style="@style/SchoolListItemText"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/school_details"
+            style="@style/SchoolListItemText"
+            tools:text="Sample Text" />
+
+        <TextView
+            android:id="@+id/school_grade"
+            style="@style/SchoolListItemText"
+            tools:text="grade" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <ImageView style="@style/SchoolListChevron"/>
+
+    </RelativeLayout>
+
+    <View style="@style/SchoolListSeparator"/>
+
+</RelativeLayout>
